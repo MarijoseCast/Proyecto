@@ -1,8 +1,57 @@
 h1{
 color:green;
-text-align: center;
-} 
+text-align: left;
+}
+h2{
+    color: green;
+    text-align: right;
+}
+}
 p{
 color:black;
 text-align:left;
+}
+
+padding:0px;
+margin:0px;
+}
+#navegacion{
+margin:auto;
+width:500px;
+}
+ul,ol{
+list-style:none;
+}
+
+#lista li a{
+background:black;
+color:white;
+text-decoration:none;
+padding:10px 15px;
+display:block;
+border-radius: 10px;
+}
+
+#lista >li{
+	float:left;
+}
+#lista li a:hover{
+	background: green;
+}
+#lista li ul{
+	display: none;
+	position: absolute;
+}
+
+#lista li:hover >ul{
+	display: block;
+}
+<!-- esta parte es para una lista desplegable dentro de otra lista desplegable-->
+#lista li ul li{
+	position: relative;
+
+}
+#lista  li ul li ul{
+	right: -140px;
+	top: 0px;
 }
